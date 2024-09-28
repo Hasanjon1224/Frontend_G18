@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fayl Yuklash</title>
+</head>
+<body>
+    <input type="file" id="fileInput">
+    <p id="fileSize"></p>
+
+    <script>
+        document.getElementById('fileInput').addEventListener('change', function(event) {
+            let file = event.target.files[0];
+            if (file) {
+                let fileSizeInKB = (file.size / 1024).toFixed(2);
+                document.getElementById('fileSize').textContent = 'Fayl hajmi: ' + fileSizeInKB + ' KB';
+            } else {
+                document.getElementById('fileSize').textContent = 'Fayl tanlanmadi.';
+            }
+        });
+    </script>
+</body>
+</html>

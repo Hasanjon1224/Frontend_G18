@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <input type="text" name="number" id="nums" /><br /><br />
+    <input type="text" name="" id="nums-2" /><br />
+    <br />
+
+    <select name="" id="operators">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="/">/</option>
+      <option value="*">*</option>
+    </select>
+
+    <button onclick="calc()">=</button>
+    <input type="text" name="" id="result" />
+
+    <script>
+ function calc() {
+    let n1 = parseInt(document.getElementById("nums").value);
+    let n2 = parseInt(document.getElementById("nums-2").value);
+    let get2 = document.getElementById("operators").value;
+
+    let resultElement = document.getElementById("result");
+
+    if (get2 === "+") {
+        resultElement.value = n1 + n2;
+    } else if (get2 === "-") {
+        resultElement.value = n1 - n2;
+    } else if (get2 === "/") {
+        resultElement.value = n1 / n2;
+    } else if (get2 === "*") {
+        resultElement.value = n1 * n2;
+    } else {
+        resultElement.value = "Noto'g'ri operator!";
+    }
+}
+
+    </script>
+  </body>
+</html>

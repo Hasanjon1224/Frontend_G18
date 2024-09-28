@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins" sans-serif;
+  text-align: center;
+}
+
+.container {
+    text-align: center;
+    align-items: center;
+}
+
+ul li {
+  text-decoration: none;
+  text-decoration-style: none;
+  list-style: none;
+}
+
+.list-style {
+  text-align: left;
+  padding-left: 50px;
+  margin-left: 180px;
+  margin-top: 30px;
+  padding-top: 10px;
+  background-color: rgb(23, 23, 118);
+  color: #fff;
+  border-radius: 15px;
+  height: 50px;
+  width: 550px;
+
+  /* background-image: url('./img/oval.png');
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 9px;
+  background-size: 30px;
+  background-position: cover; */
+
+
+}
+
+.dark-light {
+  background-color: #000;
+  color: #fff;
+}
+
+button {
+  height: 50px;
+}
+
+input {
+  height: 50px;
+}
+
+.circle {
+  background-image: url('./img/oval.png');
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 9px;
+  background-size: 30px;
+  background-position: cover;
+}
+
+ul li.checked {
+  text-decoration: line-through;
+  color: #fff;
+  /* background-image: url('./img/checked.png');
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 9px;
+  background-size: 30px; */
+  /* background-position: cover; */
+}
+
+ul li.checked::before {
+  background-image: url('./img/checked.png');
+  background-repeat: no-repeat;
+  background-position-x: 10px;
+  background-position-y: 9px;
+  background-size: 30px; 
+}
+
+.delete {
+  height: 60px;
+  width: 60px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 430px;
+    margin-top: -15px;
+}
+
