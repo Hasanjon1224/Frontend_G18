@@ -134,11 +134,31 @@
 // let result = obj.value + value;
 // let result = (-~12.34);
 
-const func = function fName () {
-return 2009;
+// const func = function fName () {
+// return 2009;
+// }
+// let result = typeof fName;
 
+// let arr = [
+//   "one",
+//   ["two"],
+//   ["three", "four", "five", "six"],
+//   ["seven", "eight", "nine", "ten"],
+//   ["eleven", "twelve"],
+//   "thirteen",
+//   ["fourteen", "fifteen", "sixteen"],
+//   ["twenty", "thirty"],
+// ];
+
+
+// console.log(arr);
+
+// const person = {}
+// console.log(person);
+
+let func = function (name, value) {
+    return console.log(`${name}, ${value} yoshda`);
 }
 
-let result = typeof fName;
 
-console.log(result);
+func("Hasanjon", 21)
