@@ -77,5 +77,5 @@ academy.addMember({
 
 console.log(academy.counterMembersRole("CoachMen"));
 console.log(academy.counterMembersRole("SportsMen"));
-      
+
 export {};
