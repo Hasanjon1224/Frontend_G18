@@ -156,9 +156,26 @@
 // const person = {}
 // console.log(person);
 
-let func = function (name, value) {
-    return console.log(`${name}, ${value} yoshda`);
-}
+// let func = function (name, value) {
+//     return console.log(`${name}, ${value} yoshda`);
+// }
 
 
-func("Hasanjon", 21)
+// func("Hasanjon", 21)
+
+// const more = typeof (() => {}) 
+// console.log(more);
+
+// const array = [1, 2, 3];
+// array.namedKey = 6;
+// let result = 0;
+
+// for (const key in array) {
+//     result+=key;
+// }
+//    console.log(result);
+
+// let str = "Salom";
+// str.localeCompare("salom");
+// console.log(str);
+
