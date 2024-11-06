@@ -150,7 +150,6 @@
 //   ["twenty", "thirty"],
 // ];
 
-
 // console.log(arr);
 
 // const person = {}
@@ -160,10 +159,9 @@
 //     return console.log(`${name}, ${value} yoshda`);
 // }
 
-
 // func("Hasanjon", 21)
 
-// const more = typeof (() => {}) 
+// const more = typeof (() => {})
 // console.log(more);
 
 // const array = [1, 2, 3];
@@ -179,3 +177,71 @@
 // str.localeCompare("salom");
 // console.log(str);
 
+// const items = [1, 2, 3, 4, 5];
+// const noop = (value) => value;
+// for (let i = 0; i < items.length; i++) {
+//   noop(items[i]);
+// }
+
+// const result = items[i];
+
+
+// const f = (r, v)=> r + v;
+// const result = [1, 2, 3].reduce(f,0);
+// let array = [1, 2, 3];
+// let map= (v, i)=> v*i;
+// let result = array.map(map);
+
+// let result = "Hello";
+// result.padStart(10, "x");
+
+// let result = ~~ (12.34)
+
+// let User = function(name){
+//   this.name = name;
+//   return {
+//     version: "JavaScript"
+//   }
+// }
+
+// let user = new User("Brendan");
+// let result = user.name;
+
+// let result = [1, [2,3], [4,[5]]].flat(2);
+
+// function func(a, b = 2009) {
+//     const result = arguments.length == func.length
+//     console.log(result);
+// }
+
+// func(95, 262);
+
+
+
+// let a= [1, 2, 3, 4, 5];
+// let result = a.shift()- a.pop();
+
+// const result = null + [0, [1]][1][0];
+// let result = 10 > 9 > 8;
+// let array = [1, 2, 3];
+// let result=array.unshift(0);
+// let map = variables => variables * variables;
+// let array = Array.from([1, 2, 3], map);
+// let result = array.join("");
+
+// let first = Math.pow(2,53);
+// let second = Math.pow(2,53)+1;
+// let result = first === second;
+// let result = [1, 2, 3, 4, 5];
+
+// let value = result.splice(1,2);
+// result.splice(1,2, ...value)
+// let result = typeof add;
+// function add(first, second) {
+//     return first + second;
+// }
+
+                
+
+console.log(result);
+// console.log(result);
