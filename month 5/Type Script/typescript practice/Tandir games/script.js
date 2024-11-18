@@ -241,7 +241,41 @@
 //     return first + second;
 // }
 
-                
+                // const toString = Object.prototype.toString;
+                // let result = toString.call([]);
+// const func = function (first, second = 3){
+//     return first + second;
+
+// }
+
+// func(2)
+// let result = func.length;
+// class User {
+//     getName(){}
+// }
+// let result = typeof User;
+// const str = "Javascript";
+// str.value = 3009;
+// let result = str.value;
+// console.log(result);
+
+// const arr = [1,2,3]
+// arr[10]= 10;
+// let result = arr.length;
+// let name = "javascript";
+// const func = function () {
+//     return this.name;
+// }
+
+// const obj = {
+//     name: "Ecmascript",
+//     func: func
+// }
+
+// const result = obj.func()
+// let p = [1,2,3,4,5];
+// let result = Math.max.apply(10, p);
+let a = [1,2,3,4,5]
+let result = a.shift() - a.pop();
 
 console.log(result);
-// console.log(result);
