@@ -185,7 +185,6 @@
 
 // const result = items[i];
 
-
 // const f = (r, v)=> r + v;
 // const result = [1, 2, 3].reduce(f,0);
 // let array = [1, 2, 3];
@@ -216,8 +215,6 @@
 
 // func(95, 262);
 
-
-
 // let a= [1, 2, 3, 4, 5];
 // let result = a.shift()- a.pop();
 
@@ -241,8 +238,8 @@
 //     return first + second;
 // }
 
-                // const toString = Object.prototype.toString;
-                // let result = toString.call([]);
+// const toString = Object.prototype.toString;
+// let result = toString.call([]);
 // const func = function (first, second = 3){
 //     return first + second;
 
@@ -275,7 +272,11 @@
 // const result = obj.func()
 // let p = [1,2,3,4,5];
 // let result = Math.max.apply(10, p);
-let a = [1,2,3,4,5]
-let result = a.shift() - a.pop();
+// let a = [1,2,3,4,5]
+// let result = a.shift() - a.pop();
 
-console.log(result);
+// var n = 0;
+//  while (n < 4) {
+//     n++;
+// }
+// console.log(n);
