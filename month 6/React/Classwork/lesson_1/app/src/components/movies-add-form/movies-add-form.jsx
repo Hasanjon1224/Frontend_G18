@@ -70,33 +70,25 @@ import React, { useState } from 'react';
 import './movies-add-form.css';
 
 const MoviesAddForm = ({ addForm }) => {
-    const [name, setName] = useState('');
-    const [views, setViews] = useState('');
+    const [state, setState] = useState({ name: "", views: '' })
+    // const [views, setViews] = useState('');
     const [error, setError] = useState('');
 
     const changeHandleInput = (e) => {
-        const { name, value } = e.target;
-
-        if (name === 'views') {
-            if (!/^\d*$/.test(value)) return; // Faqat raqamlarni qabul qiladi
-            setViews(value);
-        } else {
-            setName(value);
-        }
+        setState({ ...state, [e.target.name]: e.target.value })
     };
 
     const addFormHandler = (e) => {
         e.preventDefault();
-
-        if (name.trim() === '' || views.trim() === '') {
+        const data = { name: state.name, viewers: state.views }
+        addForm(data)
+        if (state.name.trim() === '' || state.views.trim() === '') {
             setError("Iltimos, barcha maydonlarni to‘ldiring!");
-            return;
+
         }
 
-        addForm({ name, viewers: Number(views) });
-
-        setName('');
-        setViews('');
+        setState({ name: '', views: "" })
+        // setViews('');
         setError('');
     };
 
@@ -109,14 +101,14 @@ const MoviesAddForm = ({ addForm }) => {
                     placeholder="Qanday kino?"
                     onChange={changeHandleInput}
                     name="name"
-                    value={name}
+                    value={state.name}
                 />
                 <input
                     type="number" // type="number" ishlatildi
                     className="form-control new-post-label"
                     placeholder="Necha marotaba ko‘rilgan?"
                     onChange={changeHandleInput}
-                    value={views}
+                    value={state.views}
                     name="views"
                 />
                 <button className="btn btn-outline-primary" type="submit">
